@@ -1,0 +1,77 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    background-image: linear-gradient(black, rgb(39, 39, 39));
+
+}
+
+.base {
+    position: absolute;
+    width: 400px;
+    height: 510px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(46, 46, 46);
+    box-shadow: 0 10px 20px 0 rgba(155, 155, 155, 0.3);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.calc-input {
+    width: 360px;
+    background-color: rgb(46, 46, 46);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding-top: 40px;
+    font-size: 42px;
+    text-align: right;
+    outline: none;
+}
+
+.calc-buttons {
+    height: 400px;
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 0 10px;
+}
+
+.func-button, .num-button, .equal-button{
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    margin: 2px;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.func-button {
+    background-color: rgb(24, 24, 24);
+}
+
+.num-button {
+    background-color: rgb(65, 65, 65);
+}
+
+.equal-button {
+    background-color: gold;
+    color: black;
+}
+
+.func-button:hover, .num-button:hover, .equal-button:hover{
+    opacity: 0.7;
+}
+
+.func-button:active, .num-button:active, .equal-button:active{
+    scale: 0.95;
+}
